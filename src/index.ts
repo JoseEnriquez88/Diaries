@@ -1,5 +1,8 @@
 import express from "express";
 import diaryRouter from "./routes/diaries";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const BACK_LOCAL_PORT: string | undefined = process.env.BACK_LOCAL_PORT;
 const BACK_URL_PORT: string | undefined = process.env.BACK_URL_PORT;
